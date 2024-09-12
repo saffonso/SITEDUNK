@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url(/images/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+   
+
+}
+
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu{
+    
+    width: 50%;
+}
+
+.itens-menu{
+    text-align: right;
+    width: 50%;
+    
+}
+
+
+.itens-menu a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.itens-menu a.contact-btn{
+    background-color: #0F3FD3;
+    padding:10px 10px;
+    border-radius: 10px;
+
+}
+
+.itens-menu a.contact-btn:hover{
+    border:0;
+}
+
+
+.mockup{
+   width: 100%;
+   color: white;
+   text-align: center;
+   padding-top: 100px;
+}
+
+.mockup h1{
+    display: inline-block;
+    font-size: 52px;
+    padding-bottom: 30px;
+    padding: 0 6px;
+}
+.mockup h1.normal{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 52px;
+    padding-bottom: 30px;
+    padding: 0 6px;
+}
+.mockup p{
+    font-size:20px ;
+    padding:30px 0 ;
+}
+
+.mockup img{
+    max-width: 100%;
+}
+
+
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: 20%;
+}
+
+section.porque-nos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+section.porque-nos > .center{
+    max-width: 1520px;
+}
+
+section.porque-nos > .center >  h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+
+}
+
+section.porque-nos > .center >  p{
+    font-size: 14px;
+    color:#7E92AC;
+    text-align: center;
+    width: 100%;
+
+}
+
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3{
+    margin: 20px 0;
+    font-size: 28px ;
+}
+
+.box-diferenciais p{
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+}
+
+
+section.cta{
+    background-image: url(/images/banner_meio.svg);
+    background-size: cover;
+    min-height: 200px;
+    background-position: center;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+
+section.cta h2, section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+    
+}
+
+section.cta h2{
+    font-size: 64px;
+    margin-top: 50px;
+}
+
+
+section.cta h4{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+section.cta a{
+    font-size: 20px;
+    display: inline-block;
+    background-color: #FFDD33;
+    font-weight: bold;
+    color:#0F3FD3;
+    text-decoration: none;
+    margin: 20px 0;
+    padding:20px 50px;
+    border-radius: 8px;
+}
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lista-beneficios h1{
+    font-size: 45px;
+    color: black;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 100px;
+
+}
+.lista-beneficios p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lista-beneficios span{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 100px);
+}
+
+.lista-beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+
+}
+
+
+.img-beneficios{
+    width: 60%;
+    
+}
+
+.img-beneficios img{
+    max-width: 100%;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.marcas>.center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img{
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+
